@@ -1,4 +1,4 @@
-const baseURL = 'http://0f1e-2001-fb1-26-a4fb-d82d-f22a-fd54-1bce.ngrok.io/api/daily';
+const baseURL = '';
 
 fetch(baseURL)
 fetch(baseURL)
