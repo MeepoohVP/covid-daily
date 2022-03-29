@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        font-family: 'Prompt';
+        
+        background-image: url(Bgcovid1.png);
+        background-size: 55%;
+        
+    }
+
+    .box{
+        width: 375px;
+        height: 325px;
+        background: url(coronavirus.png);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -162.5px;
+        margin-left: -187.5px;
+        border-radius: 20px;
+        
+        
+    }
+    
+    
+    .line{
+        width: 150px;
+        height: 0px;
+        border: 1px solid #000000;
+        margin-top: 10px;
+    }
+    .topic{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .minibox{
+        margin-top: 10px;
+        width: 80%;
+        height: 40%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        
+        
+    }
+    .INFO{
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .info{
+        padding-top: 10px;
+        font-size: 17px;
+        color: azure;
+    }
+    
+    
+    .smallbox{
+        width: 25%;
+        height: 30%;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 10px;
+        color: azure;
+        font-size: 12px;
+    }
+    .aksorn{
+        padding-top: 5px;
+    }
+    .num{
+        padding-top: 10px;
+    }
+    .mask{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -190px;
+        margin-top: -175px;
+        z-index: 1;
+    }
+    .downarr{
+        padding-top: 10px;
+    }
+    .numifect i{
+        color: #ba0900;
+    }
+    @media screen and (max-width:730px) {
+        .box{
+            width: 275px;
+            height: 250px;
+            margin-top: -125px;
+            margin-left: -137.5px;
+        }
+        .info{
+            font-size: 12px;
+        }
+        .topic{
+            font-size: 13px;
+        }
+        .smallbox{
+            font-size: 10px;
+        }
+        body{
+            background-size: 75%;
+        }
+        .mask{
+            width: 45px;
+            height: 45px;
+            margin-left: -155px;
+            margin-top: -132px;
+        }
+    }
+    .thai{
+        background: none;
+        width: 35px;
+        height: 30px;
+        outline: none;
+        transition: ease-out 0.3s;
+        border: 1px solid white;
+        color: white;
+        font-size: 12px;
+        
+    }
+    .eng{
+        background: #FCEE9E;
+        width: 35px;
+        height: 30px;
+        outline: none;
+        border: 1px solid #FCEE9E;
+        
+        font-size: 12px;
+    }
+    .eng:active{
+        border: 1px solid white;
+        background: none;
+        color: white;
+    }
+    
+    .topic{
+        display: inline-block;
+        
+    }
+    .trans{
+        padding-top: 20px;
+        padding-right: 20px;
+    }
