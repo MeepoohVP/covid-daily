@@ -16,10 +16,10 @@ fetch(baseURL)
 });
 function appendData(data) {
     document.getElementById("date").innerHTML = "" + data[0].txn_date;
-    document.getElementById("infect").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+  data[0].new_case + '&nbsp;&nbsp;ราย';
-    document.getElementById("death").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+  data[0].new_death +'&nbsp;&nbsp;ราย';
-    document.getElementById("healing").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+  data[0].new_recovered +'&nbsp;&nbsp;ราย';
-    document.getElementById("total_infect").innerHTML =  data[0].total_case;
-    document.getElementById("total_death").innerHTML =  data[0].total_death;
-    document.getElementById("total_healing").innerHTML = data[0].total_recovered;
+    document.getElementById("infect").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>'+  data[0].new_case + '</strong>&nbsp;&nbsp;ราย';
+    document.getElementById("death").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>'+  data[0].new_death +'</strong>&nbsp;&nbsp;ราย';
+    document.getElementById("healing").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>'+  data[0].new_recovered +'</strong>&nbsp;&nbsp;ราย';
+    document.getElementById("total_infect").innerHTML =  '<strong>'+data[0].total_case +'</strong>';
+    document.getElementById("total_death").innerHTML = '<strong>'+ data[0].total_death+'</strong>';
+    document.getElementById("total_healing").innerHTML = '<strong>'+data[0].total_recovered+'</strong>';
 }
