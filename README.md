@@ -1,6 +1,6 @@
 ﻿# covid-daily
 # `Github Page`
-<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=MeepoohVP&title=Commits&column=1&theme=darkhub" width = "120">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github-readme-stats.vercel.app/api/pin/?username=MeepoohVP&repo=coviddaily.github.io&theme=radical"></p>
+<p align="center"><img src= "https://github-readme-stats.vercel.app/api/top-langs/?username=MeepoohVP&layout=compact&theme=tokyonight" width = "300">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github-profile-trophy.vercel.app/?username=MeepoohVP&title=Commits&column=1&theme=darkhub" width = "120">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github-readme-stats.vercel.app/api/pin/?username=MeepoohVP&repo=coviddaily.github.io&theme=radical"></p>
 <p align="center"><img src="https://github-readme-stats.vercel.app/api?username=MeepoohVP&show_icons=true&theme=cobalt" width = "350">
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=MeepoohVP&theme=dark" width = "350"></p>
 
