@@ -1,5 +1,5 @@
 function Translate_ENG() {
-    document.getElementById('trans').innerHTML = '<button class="thais" id="thai" onclick="Translate_TH()">TH</button><button class="eng" id="eng" onclick="Translate_ENG()" style="background:none;border: 1px solid white;color: white;opacity:50%;width:35px;height:30px;box-shadow: inset 0 0 0 0 #50c878;cursor:default;">ENG</button>'
+    document.getElementById('trans').innerHTML = '<button class="thais" id="thai" onclick="Translate_TH()">TH</button><button class="eng" id="eng" onclick="Translate_ENG()" style="background:none;border: 1px solid white;color: white;opacity:50%;box-shadow: inset 0 0 0 0 #50c878;cursor:default;">ENG</button>'
     document.getElementById('topic').innerHTML = '<strong>Covid-19 update  <span id="date"></span></strong>';
     document.getElementById('cases').innerHTML = 'Cases';
     document.getElementById('deaths').innerHTML = 'Deaths';
