@@ -1,7 +1,7 @@
 const baseURL = 'https://covid19.ddc.moph.go.th/api/Cases/today-cases-all';
 
-
 fetch(baseURL)
+
 .then(function (response) {
     return response.json();
     
