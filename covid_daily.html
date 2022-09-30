@@ -20,19 +20,23 @@
 
         <div class="box" id="box">
             <center>
-                <div class="topic" id="topic"><strong>รายงานสถานการณ์ covid-19 </div></strong>&nbsp;<strong><span
-                        id="date"></span></strong>
+                <div class="topic" id="topic"><strong>Covid-19 <input type="text" value="thailand" id="country" onkeydown="search()" placeholder="country">
+                        <button onclick="covid()"><i class="bi bi-search"></i></button></div>
+                </strong>&nbsp;<strong><span id="date">yyyy-mm-dd</span></strong>
                 <div class="line"></div>
             </center>
             <div class="minibox">
                 <div class="INFO" align="left">
                     <div class="infect info"><span id="cases">ติดเชื้อ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                            class="bi bi-caret-right-fill arrinfect"></i><span id="infect" class="arrinfect"></span>
+                            class="bi bi-caret-right-fill arrinfect"></i><span id="infect" class="arrinfect"
+                            style="text-shadow: 2px 2px 4px #000000;color: #FADCDC;">loading...</span>
                     </div>
                     <div class="decease info"><span id="deaths">เสียชีวิต</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                            class="bi bi-caret-right-fill"></i><span id="death"></span></div>
-                    <div class="info"><span id="recovered">หายป่วย&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;<i
-                            class="bi bi-caret-right-fill"></i><span id="healing"></span></div>
+                            class="bi bi-caret-right-fill"></i><span id="death"
+                            style="text-shadow: 2px 2px 4px #000000;">loading...</span></div>
+                    <div class="info"><span id="recovered">ป่วยสะสม 1 เดือน</span>&nbsp;<i
+                            class="bi bi-caret-right-fill"></i><span id="healing"
+                            style="text-shadow: 2px 2px 4px #000000;color: #F8E8D3;">loading...</span></div>
                 </div>
 
             </div>
@@ -40,22 +44,25 @@
                 <div class="aksorn"><span id="total_cases">ติดเชื้อสะสม</span><br>
                     <div class="downarr"><i class="bi bi-caret-down-fill"></i></div>
                 </div>
-                <div class="num" id="total_infect"></div>
+                <div class="num" id="total_infect" style="text-shadow: 2px 2px 4px #000000;color: #F8E8D3;">loading...
+                </div>
             </div>
             &nbsp;<div class="smallbox">
                 <div class="aksorn"><span id="total_deaths">เสียชีวิตสะสม</span><br>
                     <div class="downarr"><i class="bi bi-caret-down-fill"></i></div>
                 </div>
-                <div class="num" id="total_death"></div>
+                <div class="num" id="total_death" style="text-shadow: 2px 2px 4px #000000;">loading...</div>
             </div>
             &nbsp;<div class="smallbox">
                 <div class="aksorn"><span id="total_recoverd">หายป่วยสะสม</span><br>
                     <div class="downarr"><i class="bi bi-caret-down-fill"></i></div>
                 </div>
-                <div class="num" id="total_healing"></div>
+                <div class="num" id="total_healing" style="text-shadow: 2px 2px 4px #000000;color: #D0F4DE;">loading...
+                </div>
             </div>
         </div>
         </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="covid_API.js"></script>
         <script src="translate.js"></script>
 

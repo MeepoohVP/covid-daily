@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -49,7 +50,35 @@ body {
 
 
 }
-
+.box center input{
+    width: 60px;
+    height: 25px;
+    color: rgba(0, 0, 0,.75);
+    outline: none;
+    border: none;
+    font-family: 'Prompt';
+    font-weight: bold;
+    padding-left: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.box center button{
+    height: 25px;
+    outline: none;
+    border: none;
+    margin-left: -6px;
+    text-align: center;
+    font-family: 'Prompt';
+    width: 30px;
+}
+.box center button:hover{
+    background-color: #4f80c0;
+    color: white;
+    transition: .3s;
+}
+.box center button:active{
+    background-color: #000000;
+    color: white;
+}
 .INFO {
     padding-top: 5px;
     padding-left: 10px;
@@ -99,6 +128,21 @@ body {
 }
 
 @media screen and (min-width:1600px) {
+    .box center input{
+        height: 35px;
+        width: 75px;
+        font-size: 18px;
+        font-family: 'Prompt';
+        color: rgba(0, 0, 0,.75);
+        font-weight: bold;
+    }
+    .box center button{
+        height: 35px;
+        width: 37px;
+        font-size: 18px;
+        margin-left: -7.7px;
+        font-family: 'Prompt';
+    }
     .box {
         width: 485px;
         height: 435px;
@@ -149,8 +193,8 @@ body {
 @media screen and (max-width:730px) {
     .box {
         width: 275px;
-        height: 260px;
-        margin-top: -130px;
+        height: 275px;
+        margin-top: -137.5px;
         margin-left: -137.5px;
     }
    
@@ -179,7 +223,7 @@ body {
         width: 45px;
         height: 45px;
         margin-left: -155px;
-        margin-top: -132px;
+        margin-top: -150px;
     }
 }
 
