@@ -112,3 +112,14 @@ function search() {
         covid();      
     }
 }
+
+function info(){
+    Swal.fire({
+        icon: 'info',
+        title: 'Covid-19',
+        customClass: 'swal-height',
+        html: '<p align ="left">&nbsp;&nbsp;<b>Coronavirus disease (COVID-19)</b> is an infectious disease caused by the <b style="color: red;">SARS-CoV-2 virus</b>.</p>' 
+        + '<p align ="left">&nbsp;&nbsp;Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age. '
+        + '</p>' + '<ul align="left">&nbsp;&nbsp;<b>Prevention</b><li>-Wearing a properly fitted mask.</li><li>-Staying at least 1 metre apart from others.</li><li>-Washing your hands or using an alcohol-based rub frequently.</li></ul>',
+      })
+}

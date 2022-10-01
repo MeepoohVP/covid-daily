@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Prompt';
-
     background-image: url(Bgcovid1.png);
     background-size: 55%;
 
@@ -74,6 +73,7 @@ body {
     background-color: #4f80c0;
     color: white;
     transition: .3s;
+    cursor: pointer;
 }
 .box center button:active{
     background-color: #000000;
@@ -191,6 +191,9 @@ body {
 }
 
 @media screen and (max-width:730px) {
+    .swal-height{
+        height: auto;
+    }
     .box {
         width: 275px;
         height: 275px;
@@ -311,4 +314,7 @@ body {
     cursor: pointer;
     border: none;
 
+}
+.swal-height{
+    height: 80vh;
 }
