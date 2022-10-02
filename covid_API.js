@@ -60,13 +60,37 @@ const options = {
     }
 };
 function appendData(data) {
-    document.getElementById('infect').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>' + data.response[0].cases['new'] + '</strong>&nbsp;&nbsp;ราย';
-    document.getElementById('death').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>' + data.response[0].deaths['new'] + '</strong>&nbsp;&nbsp;ราย';
-    document.getElementById("healing").innerHTML = '&nbsp;&nbsp;<strong>' + (Number(data.response[0].cases["1M_pop"])).toLocaleString() + '</strong>&nbsp;&nbsp;ราย';
-    document.getElementById('total_infect').innerHTML = '<strong>' + (Number(data.response[0].cases['total'])).toLocaleString() + '</strong>';
-    document.getElementById('total_death').innerHTML = '<strong>' + (Number(data.response[0].deaths['total'])).toLocaleString() + '</strong>';
-    document.getElementById('total_healing').innerHTML = '<strong>' + (Number(data.response[0].cases['recovered'])).toLocaleString() + '</strong>';
+    const infect = data.response[0].cases['new'];
+    const death = data.response[0].deaths['new'];
+    const oneM = data.response[0].cases["1M_pop"];
+    const total_infect = data.response[0].cases['total'];
+    const total_death = data.response[0].deaths['total'];
+    const total_healing = data.response[0].cases['recovered'];
+    document.getElementById('infect').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>' + infect + '</strong>&nbsp;&nbsp;ราย';
+    document.getElementById('death').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>' + death + '</strong>&nbsp;&nbsp;ราย';
+    document.getElementById("healing").innerHTML = '&nbsp;&nbsp;<strong>' + (Number(oneM)).toLocaleString() + '</strong>&nbsp;&nbsp;ราย';
+    document.getElementById('total_infect').innerHTML = '<strong>' + (Number(total_infect)).toLocaleString() + '</strong>';
+    document.getElementById('total_death').innerHTML = '<strong>' + (Number(total_death)).toLocaleString() + '</strong>';
+    document.getElementById('total_healing').innerHTML = '<strong>' + (Number(total_healing)).toLocaleString() + '</strong>';
     document.getElementById('date').innerHTML = data.response[0].day
+    if (infect == null) {
+        document.getElementById('infect').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>No update</strong>'
+    }
+    if (death == null) {
+        document.getElementById('death').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>No update</strong>'
+    }
+    if (oneM == null) {
+        document.getElementById('healing').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>No update</strong>'
+    }
+    if (total_infect == null) {
+        document.getElementById('total_infect').innerHTML = '<strong>No update</strong>'
+    }
+    if (total_death == null) {
+        document.getElementById('total_death').innerHTML = '<strong>No update</strong>'
+    }
+    if (total_healing == null) {
+        document.getElementById('total_healing').innerHTML = '<strong>No update</strong>'
+    }
 
 }
 fetch('https://covid-193.p.rapidapi.com/statistics?country=thailand', options)
