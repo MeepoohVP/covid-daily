@@ -13,6 +13,11 @@ body {
 
 }
 
+.about {
+    width: 20px;
+    height: 20px;
+}
+
 .box {
     width: 375px;
     height: 325px;
@@ -49,10 +54,11 @@ body {
 
 
 }
-.box center input{
+
+.box center input {
     width: 60px;
     height: 25px;
-    color: rgba(0, 0, 0,.75);
+    color: rgba(0, 0, 0, .75);
     outline: none;
     border: none;
     font-family: 'Prompt';
@@ -60,7 +66,8 @@ body {
     padding-left: 5px;
     background: rgba(255, 255, 255, 0.5);
 }
-.box center button{
+
+.box center button {
     height: 25px;
     outline: none;
     border: none;
@@ -69,16 +76,19 @@ body {
     font-family: 'Prompt';
     width: 30px;
 }
-.box center button:hover{
+
+.box center button:hover {
     background-color: #4f80c0;
     color: white;
     transition: .3s;
     cursor: pointer;
 }
-.box center button:active{
+
+.box center button:active {
     background-color: #000000;
     color: white;
 }
+
 .INFO {
     padding-top: 5px;
     padding-left: 10px;
@@ -125,109 +135,6 @@ body {
 
 .numifect i {
     color: #ba0900;
-}
-
-@media screen and (min-width:1600px) {
-    .box center input{
-        height: 35px;
-        width: 75px;
-        font-size: 18px;
-        font-family: 'Prompt';
-        color: rgba(0, 0, 0,.75);
-        font-weight: bold;
-    }
-    .box center button{
-        height: 35px;
-        width: 37px;
-        font-size: 18px;
-        margin-left: -7.7px;
-        font-family: 'Prompt';
-    }
-    .box {
-        width: 485px;
-        height: 435px;
-        margin-top: -217.5px;
-        margin-left: -242.5px;
-    }
-    .INFO{
-        padding-top: 10px;
-    }
-    .topic{
-        font-size: 21px;
-    }
-
-    .line {
-        width: 200px;
-    }
-    .info{
-        font-size: 23px;
-    }
-    .smallbox{
-        font-size: 16px;
-        margin-top: 16px;
-        height: 32%;
-        width: 26%;
-    }
-    .aksorn{
-        padding-top: 16px;
-    }
-    .minibox{
-        margin-top: 20px;
-        width: 85%;
-    }
-    .trans button{
-        width: 50px;
-        height: 45px;
-        font-size: 17px;
-    }
-    .mask{
-        margin-left: -250px;
-        margin-top: -230px;
-    }
-    #date{
-        font-size: 21.5px;
-    }
-   
-}
-
-@media screen and (max-width:730px) {
-    .swal-height{
-        height: auto;
-    }
-    .box {
-        width: 275px;
-        height: 275px;
-        margin-top: -137.5px;
-        margin-left: -137.5px;
-    }
-   
-
-    .info {
-        font-size: 12px;
-    }
-
-    .topic {
-        font-size: 13px;
-    }
-
-    #date {
-        font-size: 13.5px;
-    }
-
-    .smallbox {
-        font-size: 9px;
-    }
-
-    body {
-        background-size: 75%;
-    }
-
-    .mask {
-        width: 45px;
-        height: 45px;
-        margin-left: -155px;
-        margin-top: -150px;
-    }
 }
 
 .thai {
@@ -315,6 +222,146 @@ body {
     border: none;
 
 }
-.swal-height{
-    height: 80vh;
+
+.swal-height {
+    height: 70vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(160, 159, 159);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.sweet-alert button:hover {
+    background-color: none;
+}
+
+@media screen and (min-width:1600px) {
+    .box center input {
+        height: 35px;
+        width: 75px;
+        font-size: 18px;
+        font-family: 'Prompt';
+        color: rgba(0, 0, 0, .75);
+        font-weight: bold;
+    }
+
+    .about {
+        width: 30px;
+        height: 30px;
+    }
+
+    .box center button {
+        height: 35px;
+        width: 37px;
+        font-size: 18px;
+        margin-left: -7.7px;
+        font-family: 'Prompt';
+    }
+
+    .box {
+        width: 485px;
+        height: 435px;
+        margin-top: -217.5px;
+        margin-left: -242.5px;
+    }
+
+    .INFO {
+        padding-top: 10px;
+    }
+
+    .topic {
+        font-size: 21px;
+    }
+
+    .line {
+        width: 200px;
+    }
+
+    .info {
+        font-size: 23px;
+    }
+
+    .smallbox {
+        font-size: 16px;
+        margin-top: 16px;
+        height: 32%;
+        width: 26%;
+    }
+
+    .aksorn {
+        padding-top: 16px;
+    }
+
+    .minibox {
+        margin-top: 20px;
+        width: 85%;
+    }
+
+    .trans button {
+        width: 50px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    .mask {
+        margin-left: -250px;
+        margin-top: -230px;
+    }
+
+    #date {
+        font-size: 21.5px;
+    }
+
+}
+
+@media screen and (max-width:730px) {
+    .box {
+        width: 275px;
+        height: 275px;
+        margin-top: -137.5px;
+        margin-left: -137.5px;
+    }
+
+
+    .info {
+        font-size: 12px;
+    }
+
+    .topic {
+        font-size: 13px;
+    }
+
+    #date {
+        font-size: 13.5px;
+    }
+
+    .smallbox {
+        font-size: 9px;
+    }
+
+    body {
+        background-size: 75%;
+    }
+
+    .mask {
+        width: 45px;
+        height: 45px;
+        margin-left: -155px;
+        margin-top: -150px;
+    }
 }

@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="coviddaily.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <title>รายงานสถานการณ์โรคโควิด 19 ประเทศไทย</title>
+    <title>Covid Update</title>
 </head>
 
 <body>
@@ -20,7 +19,9 @@
 
         <div class="box" id="box">
             <center>
-                <div class="topic" id="topic"><strong><img src="https://cdn-icons-png.flaticon.com/512/1008/1008908.png" width="20" height="20" style="vertical-align: middle;cursor: pointer;" onclick="info()"> Covid-19 <input type="text" value="thailand" id="country" onkeydown="search()" placeholder="country">
+                <div class="topic" id="topic"><strong><img src="https://cdn-icons-png.flaticon.com/512/1008/1008908.png"
+                            class="about" style="vertical-align: middle;cursor: pointer;" onclick="info()"> Covid-19
+                        <input type="text" value="Thailand" id="country" onkeydown="search()" placeholder="country">
                         <button onclick="covid()"><i class="bi bi-search"></i></button></div>
                 </strong>&nbsp;<strong><span id="date">yyyy-mm-dd</span></strong>
                 <div class="line"></div>
@@ -62,9 +63,11 @@
             </div>
         </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="covid_API.js"></script>
         <script src="translate.js"></script>
+        <script src="guide.js"></script>
 
 
 </body>
